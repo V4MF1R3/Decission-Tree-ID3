@@ -46,7 +46,7 @@ entry_wind.grid(row=3, column=1)
 
 
 def make_prediction_gui():
-    tree = load_model("exp5.pkl")
+    tree = load_model("model.pkl")
     map = {"Sunny":2, "Overcast":0, "Rain":1, "Hot":1, "Mild":2, "Cool":0, "High":0, "Normal":1, "Weak":1, "Strong":0}
     input_array = [map[entry_outlook.get()], map[entry_temperature.get()], map[entry_humidity.get()], map[entry_wind.get()]]
     predicted_label = predict_example(input_array, tree)
