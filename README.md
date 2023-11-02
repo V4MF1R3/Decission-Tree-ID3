@@ -10,13 +10,16 @@ The dataset used in this project is sourced from Kaggle and is available at the 
 To get started with the project, follow these steps:
 - Clone the repository to your local machine.
 - Install the required dependencies using the provided requirements.txt file.
-- Run the main script to train the decision tree model and visualize the results.
+- install graphviz on your os.
+- Use the model_training notebook to train the decision tree model and visualize the results.
 - Use the provided GUI for predicting new instances based on the trained model.
 
 ## Contents
-- main.py: Contains the main script for building the decision tree model and evaluating its performance.
+- model_training.ipynb: Contains the code for building the decision tree model and evaluating its performance.
 - PlayTennis.csv: Sample dataset used for training and testing the model.
 - decision_tree.png: Visual representation of the trained decision tree.
+- GUI.py: GUI for predicting new instance based on the trained model.
+- model.pkl: Trained model exported using pickle.
 
 ## Usage
 You can use this project to understand the fundamentals of decision tree classification and how to implement it in Python. Additionally, the provided GUI allows users to input new instances and obtain predictions from the trained model.
@@ -25,7 +28,7 @@ You can use this project to understand the fundamentals of decision tree classif
 The decision tree model is implemented from scratch using the ID3 algorithm. It recursively splits the dataset based on the information gain at each node. Categorical data is converted to numerical data using the LabelEncoder from the scikit-learn library.
 
 ## Code Explanation
-The main script (main.py) contains functions for building the decision tree, calculating information gain, and evaluating the model's performance. It also includes a function to visualize the decision tree using the graphviz library.
+The notebook (model_training.py) contains functions for building the decision tree, calculating information gain, and evaluating the model's performance. It also includes a function to visualize the decision tree using the graphviz library.
 
 ## GUI Implementation
 The GUI allows users to load a pre-trained decision tree model and make predictions on new instances. It simplifies the process of interacting with the model without requiring knowledge of the underlying code.
