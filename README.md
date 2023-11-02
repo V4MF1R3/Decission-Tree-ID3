@@ -10,7 +10,7 @@ The dataset used in this project is sourced from Kaggle and is available at the 
 To get started with the project, follow these steps:
 - Clone the repository to your local machine.
 - Install the required dependencies using the provided requirements.txt file.
-- install [Graphviz].(https://graphviz.org/download/). in your os.
+- install [Graphviz].(https://www.graphviz.org/download/) in your os.
 - Use the model_training notebook to train the decision tree model and visualize the results.
 - Use the provided GUI for predicting new instances based on the trained model.
 
